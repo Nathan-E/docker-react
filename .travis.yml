@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t cnathan/docker-react -f Dockerfile.dev .
+  - docker build -t cnathan/docker-react .
 
 script:
   - docker run cnathan/docker-react npm run test -- --coverage
